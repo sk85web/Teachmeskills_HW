@@ -1,0 +1,8 @@
+body {
+  counter-reset: number;
+}
+
+h2::before {
+  counter-increment: number;
+  content: 'Team # ' counter(number) ':';
+}
