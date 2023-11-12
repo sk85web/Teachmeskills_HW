@@ -1,8 +1,54 @@
 body {
-  counter-reset: number;
+  margin: 0;
+  counter-reset: number text;
 }
 
-h2::before {
+.container {
+  margin: 10px auto;
+  width: 600px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgb(103, 103, 128);
+  color: rgba(256, 256, 256, 0.8);
+  text-align: center;
+}
+
+.list {
+  margin: 0;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 50px;
+  background-color: #282839;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 35px;
+  padding: 10px;
+  background-color: rgb(35, 35, 66);
+  border-radius: 10px;
+  margin-bottom: 0;
+}
+
+h2::after {
+  padding: 10px;
   counter-increment: number;
-  content: 'Team # ' counter(number) ':';
+  content: 'номер ' counter(number) ': ';
+}
+
+.content {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: rgb(161, 161, 214);
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+  text-align: left;
+}
+
+.content::before {
+  counter-increment: text;
+  content: counter(text) '. ';
+  color: red;
 }
