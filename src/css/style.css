@@ -112,7 +112,7 @@ h5 {
 }
 
 .intro__inner {
-  padding: 282px 170px 185px;
+  padding: 283px 170px 185px;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -164,6 +164,127 @@ h5 {
 .intro__btn:hover {
   color: #000;
   background-color: #fff;
-  /* border: #fff solid 2px; */
 }
+
+.intro__form {
+  width: 470px;
+  max-height: 450px;
+  font-family: 'Open Sans';
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.form__title {
+  margin: 33px 0;
+  font-family: 'Open Sans';
+  font-size: 1.33rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.form__title span {
+  color: #ec7979;
+}
+
+.form__input {
+  margin-bottom: 33px;
+  width: 370px;
+  padding-bottom: 16px;
+  border: none;
+  border-bottom: 1px #bdbdbd solid;
+}
+
+.form__input::placeholder {
+  color: #bdbdbd;
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.form__input:last-child {
+  margin-bottom: 75px;
+}
+
+.form__button {
+  width: 100%;
+  padding: 20px 0;
+  display: block;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 0.83rem;
+  color: #fff;
+  border: none;
+  border-radius: 0 0 10px 10px;
+  cursor: pointer;
+  background-color: #ec7979;
+  transition: background-color 0.2s linear;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form__button:hover {
+  background-color: rgb(163, 74, 74);
+}
+
 /* ---------------------------/Intro----------------------------- */
+
+/* ---------------------------Social----------------------------- */
+.social {
+  color: #86878b;
+  background-color: #f8efef;
+}
+
+.social__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social__content {
+  max-width: 470px;
+}
+.social__content-title {
+  padding: 14px 0;
+  margin-bottom: 18px;
+  font-family: 'Open Sans';
+  font-size: 1.33rem;
+  font-weight: 700;
+
+  color: #333333;
+}
+
+.social__content-text {
+  margin-bottom: 18px;
+  line-height: 1.17;
+}
+
+.social__icons {
+  display: flex;
+}
+.social__icons img {
+  display: inline-flex;
+  margin-left: 30px;
+}
+/* ---------------------------/Social----------------------------- */
+
+/* ---------------------------Banner----------------------------- */
+.banner {
+  position: relative;
+  color: #000;
+}
+
+/* .banner__filter {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+/* ---------------------------/Banner----------------------------- */

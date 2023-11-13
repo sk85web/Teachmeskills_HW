@@ -13,7 +13,7 @@
   <body>
     <header class="header">
       <div class="header__inner">
-        <img class="logo" src="/src/img/logo.png" alt="logo" />
+        <img class="logo" src="/src/img/intro/logo.png" alt="logo" />
         <nav class="header__nav">
           <ul class="nav__list">
             <li class="nav__list-item">
@@ -37,11 +37,11 @@
     </header>
 
     <section class="intro">
-      <img class="intro__bg" src="/src/img/intro.png" alt="intro" />
-      <img class="intro__bg" src="/src/img/bg.png" alt="intro" />
+      <img class="intro__bg" src="/src/img/intro/intro.png" alt="intro" />
+      <img class="intro__bg" src="/src/img/intro/bg.png" alt="intro-bg" />
       <div class="intro__inner">
         <div class="intro__content">
-          <img class="logo logo_big" src="/src/img/logo.png" alt="logo" />
+          <img class="logo logo_big" src="/src/img/intro/logo.png" alt="logo" />
           <h2 class="intro__content-title">
             MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
           </h2>
@@ -50,10 +50,78 @@
           </p>
           <button class="intro__btn">Download</button>
         </div>
-        <form action="/" method="post">
-          <label for=""></label>
+        <form
+          class="intro__form"
+          action="#"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <h3 class="form__title">Try Your <span>FREE</span> Trial Today</h3>
+
+          <input
+            class="form__input"
+            type="text"
+            name="username"
+            tabindex="1"
+            placeholder="Name"
+          />
+          <input
+            class="form__input"
+            type="email"
+            name="email"
+            tabindex="2"
+            placeholder="Email"
+          />
+          <input
+            class="form__input"
+            type="password"
+            name="password"
+            tabindex="3"
+            placeholder="Password"
+          />
+          <button class="form__button" type="submit" tabindex="4">
+            Get Started
+          </button>
         </form>
       </div>
+    </section>
+    <section class="social">
+      <div class="container">
+        <div class="social__block">
+          <div class="social__content">
+            <h4 class="social__content-title">Social Media</h4>
+            <p class="social__content-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet.
+            </p>
+          </div>
+          <div class="social__icons">
+            <img src="/src/img/social/facebook_icon.svg" alt="facebook" />
+            <img src="/src/img/social/twitter_icon.svg" alt="twitter" />
+            <img src="/src/img/social/linkedin_icon.svg" alt="linkedin" />
+            <img src="/src/img/social/pinterest_icon.svg" alt="pinterest" />
+            <img src="/src/img/social/instagram_icon.svg" alt="instagram" />
+            <img src="/src/img/social/github_icon.svg" alt="github" />
+            <img src="/src/img/social/rss_icon.svg" alt="rss" />
+          </div>
+        </div>
+        <!--/.social__block-->
+      </div>
+      <!--/.container-->
+    </section>
+    <!--/.social-->
+
+    <section class="banner">
+      <img src="/src/img/banner/banner.png" alt="banner" />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+      similique repellendus quaerat corporis qui explicabo optio deleniti
+      maiores, nam aut!
+      <h2 class="banner__title">STYLISH AXURE DESIGN</h2>
+      <h3 class="banner__subtitle">
+        Use the sections you need, remove the ones you don't. Create gorgeous
+        prototypes faster than ever!
+      </h3>
+      <button class="intro__btn intro__btn_banner">Download</button>
     </section>
   </body>
 </html>
