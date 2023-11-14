@@ -292,7 +292,7 @@ h5 {
 
 .banner__filter {
   width: 100%;
-  height: calc(100% - 4px);
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
@@ -301,7 +301,7 @@ h5 {
 }
 
 .banner__inner {
-  padding: 50px 0;
+  padding: 50px 0 46px;
   color: #fff;
   text-align: center;
   position: relative;
