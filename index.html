@@ -3,9 +3,257 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson7_Task2</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Yanki</title>
   </head>
   <body>
-    www
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__block">
+            <div class="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="header__info">
+              <li><a href="#" class="header__info-link">NEW</a></li>
+              <li><a href="#" class="header__info-link">КАТАЛОГ</a></li>
+              <li><a href="#" class="header__info-link">О НАС</a></li>
+            </ul>
+            <div class="header__logo">
+              <picture>
+                <source
+                  srcset="./src/img/header/YANKI-small.svg"
+                  media="(max-width: 375px)"
+                />
+                <img src="./src/img/header/YANKI.svg" alt="logo" />
+              </picture>
+            </div>
+
+            <div class="header__lang">
+              <span class="header__lang-item"
+                >ru<img src="./src/img/header/arrow.svg" alt="arrow"
+              /></span>
+              <span class="header__lang-item"
+                >uah<img src="./src/img/header/arrow.svg" alt="arrow"
+              /></span>
+            </div>
+          </div>
+
+          <ul class="header__icons">
+            <li>
+              <a href="#" class="header__icons-icon"
+                ><img src="./src/img/header/search.svg" alt="search"
+              /></a>
+            </li>
+            <li>
+              <a href="#" class="header__icons-icon"
+                ><img src="./src/img/header/account.svg" alt="account"
+              /></a>
+            </li>
+            <li>
+              <a href="#" class="header__icons-icon"
+                ><img src="./src/img/header/like.svg" alt="like"
+              /></a>
+            </li>
+            <li>
+              <a href="#" class="header__icons-icon"
+                ><img src="./src/img/header/card.svg" alt="card"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="main__title">
+          <span class="main__title-span"
+            ><a class="main__title-span-link" href="#">Главная</a></span
+          >
+          <svg
+            width="19"
+            height="18"
+            viewBox="0 0 19 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.0188 9.88906L12.9079 6L14.0188 7.11094L9.0188 12.1109L4.0188 7.11094L5.12973 6L9.0188 9.88906Z"
+              fill="
+            #E0BEA2"
+            />
+          </svg>
+          <span class="main__title-span">Личный кабинет</span>
+        </div>
+        <!--/main__title-->
+
+        <div class="togglepanel">
+          <div class="togglepanel__orders">
+            <a class="togglepanel-link" href="#">История заказов</a>
+          </div>
+          <div class="togglepanel__person">
+            <a class="togglepanel-link togglepanel-link_active" href="#"
+              >Личные данные</a
+            >
+          </div>
+          <div class="togglepanel__exit">
+            <a class="togglepanel-link" href="#">Выйти</a>
+          </div>
+        </div>
+        <!--/togglepanel-->
+
+        <div class="togglepanel__body">
+          <span class="main__title-span main__title-span-togglepanel"
+            >Персональные данные:</span
+          >
+          <div class="person__data-block">
+            <div class="person__cell">Елизаветта</div>
+            <div class="person__cell">Станиславчук</div>
+            <div class="person__cell">ella.s97@gmail.com</div>
+            <div class="person__cell">+38(067)470 20 66</div>
+          </div>
+
+          <span class="main__title-span main__title-span-togglepanel"
+            >Адрес доставки:</span
+          >
+          <div class="person__adress-block">
+            <div class="person__cell person__cell_big">Черновцы</div>
+            <div class="person__cell person__cell_big">№4</div>
+          </div>
+
+          <button class="togglepanel__body-btn" type="button">
+            ОБНОВИТЬ ИНФОРМАЦИЮ
+          </button>
+        </div>
+        <!--/togglepanel__body-->
+        <footer>
+          <div class="footer__block">
+            <div class="footer__block-item">
+              <h3 class="footer__item-title">
+                КОМПАНИЯ
+                <svg
+                  width="19"
+                  height="18"
+                  viewBox="0 0 19 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.0188 9.88906L12.9079 6L14.0188 7.11094L9.0188 12.1109L4.0188 7.11094L5.12973 6L9.0188 9.88906Z"
+                    fill="
+            #E0BEA2"
+                  />
+                </svg>
+              </h3>
+              <ul class="footer__item-content">
+                <li class="item-content-span">
+                  <a href="#" class="item-content-link">О нас </a>
+                </li>
+                <li class="item-content-span">
+                  <a href="#" class="item-content-link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <!--/footer__block-item-->
+            <div class="footer__block-item">
+              <h3 class="footer__item-title">
+                ПОЛЕЗНОЕ
+                <svg
+                  width="19"
+                  height="18"
+                  viewBox="0 0 19 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.0188 9.88906L12.9079 6L14.0188 7.11094L9.0188 12.1109L4.0188 7.11094L5.12973 6L9.0188 9.88906Z"
+                    fill="
+            #E0BEA2"
+                  />
+                </svg>
+              </h3>
+              <ul class="footer__item-content">
+                <li class="item-content-span">
+                  <a href="#" class="item-content-link">Оплата и доставка </a>
+                </li>
+                <li class="item-content-span">
+                  <a href="#" class="item-content-link">Условия возврата </a>
+                </li>
+                <li class="item-content-span">
+                  <a href="#" class="item-content-link">Бонусная система</a>
+                </li>
+              </ul>
+            </div>
+            <!--/footer__block-item-->
+            <div class="footer__block-item">
+              <h3 class="footer__item-title">
+                ПОКУПАТЕЛЮ
+                <svg
+                  width="19"
+                  height="18"
+                  viewBox="0 0 19 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.0188 9.88906L12.9079 6L14.0188 7.11094L9.0188 12.1109L4.0188 7.11094L5.12973 6L9.0188 9.88906Z"
+                    fill="
+            #E0BEA2"
+                  />
+                </svg>
+              </h3>
+              <ul class="footer__item-content">
+                <li class="item-content-span">
+                  <a href="#" class="item-content-link">Избранное </a>
+                </li>
+                <li class="item-content-span">
+                  <a href="#" class="item-content-link">Публичная оферта </a>
+                </li>
+                <li class="item-content-span">
+                  <a href="#" class="item-content-link"
+                    >Политика конфиденциальности
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--/footer__block-item-->
+            <div class="footer__block-item">
+              <h3 class="footer__item-title">КОНТАКТЫ</h3>
+              <ul class="footer__item-content">
+                <li class="item-content-span">
+                  <div class="footer__icons">
+                    <a href="#" class="item-content-link"
+                      ><img src="./src/img/footer/inst.svg" alt="instagram"
+                    /></a>
+                    <a href="#" class="item-content-link"
+                      ><img src="./src/img/footer/telegram.svg" alt="telegram"
+                    /></a>
+                  </div>
+                </li>
+                <li class="item-content-span">
+                  <a href="tel:+380730963644" class="item-content-link"
+                    >+38(073) 096 36 44</a
+                  >
+                </li>
+                <li class="item-content-span">
+                  <a href="mailto:info@yanki.com" class="item-content-link"
+                    >info@yanki.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!--/footer__block-item-->
+          </div>
+          <span class="copyright">©️ 2021 Yanki. All rights reserved</span>
+        </footer>
+      </div>
+      <!--/container-->
+    </main>
   </body>
 </html>
