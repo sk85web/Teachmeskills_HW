@@ -206,10 +206,6 @@ h5 {
   outline: none;
 }
 
-.form__input:last-child {
-  margin-bottom: 75px;
-}
-
 .form__button {
   width: 100%;
   padding: 20px 0;
@@ -367,4 +363,161 @@ footer {
 
 /* ---------------------------@media----------------------------- */
 
+@media screen and (max-width: 1024px) {
+  body {
+    width: 1024px;
+  }
+
+  .container {
+    max-width: 992px;
+    margin: 0 auto;
+  }
+
+  /* ---------------------------Header----------------------------- */
+
+  .header__nav {
+    margin-right: 20px;
+  }
+
+  /* ---------------------------/Header----------------------------- */
+
+  /* ---------------------------Intro----------------------------- */
+
+  .intro {
+    height: 768px;
+    width: 100%;
+  }
+
+  .intro__bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .intro__inner {
+    padding: 212px 20px 106px 115px;
+  }
+  .intro__content {
+    max-width: 455px;
+  }
+
+  .logo_big {
+    width: 183px;
+    margin-bottom: 37px;
+  }
+
+  .intro__content-title {
+    font-size: 2rem;
+  }
+
+  .intro__content-title::after {
+    width: 115px;
+    margin: 41px 0 31px;
+  }
+
+  .intro__content-text {
+    width: 270px;
+    line-height: 1.14;
+    font-size: 0.77rem;
+    margin-bottom: 42px;
+  }
+
+  .intro__btn {
+    padding: 11px 0;
+    width: 183px;
+  }
+
+  .intro__form {
+    width: 398px;
+    height: 450px;
+  }
+
+  .form__title {
+    margin: 33px 0;
+    font-size: 1rem;
+  }
+
+  .form__input {
+    width: 298px;
+  }
+
+  /* ---------------------------/Intro----------------------------- */
+
+  /* ---------------------------Social----------------------------- */
+
+  .social__content {
+    max-width: 402px;
+  }
+  .social__content-title {
+    padding: 11px 0;
+    margin-bottom: 13px;
+    font-size: 1rem;
+  }
+
+  .social__content-text {
+    margin-bottom: 13px;
+    line-height: 1.14;
+    font-size: 0.77rem;
+  }
+
+  .social__icons {
+    width: 64px;
+    height: 64px;
+    gap: 20px;
+  }
+
+  /* ---------------------------/Social----------------------------- */
+
+  /* ---------------------------Banner----------------------------- */
+
+  .banner__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .banner__title {
+    padding: 39px 0;
+    font-size: 1.33rem;
+  }
+
+  .banner__title::after {
+    width: 142px;
+    left: calc(50% - 71px);
+  }
+
+  .banner__subtitle {
+    font-size: 0.77rem;
+    margin: 32px 0;
+  }
+
+  .intro__btn_banner {
+    width: 318px;
+  }
+
+  /* ---------------------------/Banner----------------------------- */
+
+  /* ---------------------------Footer----------------------------- */
+  footer {
+    padding: 35px 30px;
+  }
+
+  .footer__content {
+    gap: 38px;
+  }
+
+  .social__icons_footer {
+    gap: 33px;
+  }
+
+  .social__icons-icon_sm {
+    width: 46px;
+    height: 45px;
+  }
+
+  .copyright {
+    opacity: 50%;
+  }
+  /* ---------------------------/Footer----------------------------- */
+}
 /* ---------------------------/@media----------------------------- */
