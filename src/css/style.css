@@ -46,6 +46,10 @@ h5 {
   margin-left: 115px;
 }
 
+.burger {
+  display: none;
+}
+
 .header__nav {
   display: flex;
   margin-right: 170px;
@@ -589,6 +593,65 @@ footer {
 
   /* ---------------------------/Banner----------------------------- */
 
+  /* ---------------------------Contacts----------------------------- */
+
+  .contacts__title {
+    margin-bottom: 32px;
+    padding: 40px 0;
+    font-weight: 700;
+    font-size: 1.33rem;
+  }
+
+  .contacts__title:after {
+    content: '';
+    display: block;
+    width: 170px;
+    height: 1px;
+    background-color: #ec7979;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+
+  .contacts__subtitle {
+    font-size: 0.77rem;
+    margin-bottom: 72px;
+  }
+
+  .contacts__form {
+    gap: 20px;
+  }
+
+  .form__input-contacts {
+    width: 100%;
+  }
+
+  .contacts__form-input-block {
+    width: 486px;
+  }
+
+  .contacts__form-message-block {
+    width: 486px;
+  }
+
+  .form__input-message {
+    width: 100%;
+    padding-bottom: 178px;
+    margin-bottom: 0;
+  }
+
+  .contacts__form-btn {
+    width: 318px;
+  }
+
+  .contacts__form-btn:hover {
+    background-color: rgb(163, 74, 74);
+  }
+
+  /* ---------------------------/Contacts----------------------------- */
+
   /* ---------------------------Footer----------------------------- */
   footer {
     padding: 35px 30px;
@@ -607,9 +670,283 @@ footer {
     height: 45px;
   }
 
-  .copyright {
-    opacity: 50%;
+  /* ---------------------------/Footer----------------------------- */
+}
+
+@media screen and (max-width: 430px) {
+  body {
+    width: 430px;
   }
+
+  .container {
+    padding: 0 16px;
+    max-width: 430px;
+  }
+
+  /* ---------------------------Header----------------------------- */
+
+  .logo {
+    margin-left: 20px;
+  }
+  .header__nav {
+    display: none;
+  }
+
+  .burger {
+    margin-right: 35px;
+    display: block;
+    width: 24px;
+    height: 18px;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .burger span {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+
+    position: absolute;
+    left: 0;
+    top: calc(50% - 1px);
+  }
+
+  .burger span:first-child {
+    top: 0;
+  }
+
+  .burger span:last-child {
+    top: auto;
+    bottom: 0;
+  }
+
+  /* ---------------------------/Header----------------------------- */
+
+  /* ---------------------------Intro----------------------------- */
+
+  .intro {
+    margin-top: -56px;
+    height: 1005px;
+  }
+
+  .intro__inner {
+    padding: 140px 16px 50px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .intro__content {
+    max-width: 288px;
+  }
+
+  .logo_big {
+    display: none;
+  }
+
+  .intro__content-title {
+    font-size: 2rem;
+  }
+
+  .intro__content-title::after {
+    width: 134px;
+    margin: 43px 77px 43px;
+  }
+
+  .intro__content-text {
+    width: 270px;
+    line-height: 1.16;
+    margin-bottom: 42px;
+  }
+
+  .intro__btn {
+    padding: 15px 0;
+    width: 288px;
+    margin-bottom: 56px;
+  }
+
+  .intro__form {
+    width: 280px;
+    max-height: 381px;
+  }
+
+  .form__title {
+    font-size: 0.77rem;
+  }
+
+  .form__title span {
+    color: #ec7979;
+  }
+
+  .form__input {
+    margin-bottom: 33px;
+    width: 240px;
+    padding-bottom: 16px;
+    border: none;
+    border-bottom: 1px #bdbdbd solid;
+  }
+
+  .form__input::placeholder {
+    color: #bdbdbd;
+  }
+
+  .form__input:focus {
+    outline: none;
+  }
+
+  .form__button {
+    width: 100%;
+    padding: 20px 0;
+    display: block;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 0.83rem;
+    color: #fff;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    background-color: #ec7979;
+    transition: background-color 0.2s linear;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .form__button:hover {
+    background-color: rgb(163, 74, 74);
+  }
+
+  /* ---------------------------/Intro----------------------------- */
+
+  /* ---------------------------Social----------------------------- */
+
+  .social__block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social__content {
+    max-width: 271px;
+  }
+  .social__content-title {
+    padding: 12px 0;
+    margin-bottom: 13px;
+    margin-top: 31px;
+    font-size: 1rem;
+  }
+
+  .social__content-text {
+    margin-bottom: 32px;
+    font-size: 0.77rem;
+  }
+
+  .social__icons {
+    gap: 17px;
+    margin-bottom: 44px;
+  }
+  .social__icons-icon {
+    width: 28px;
+    height: 26px;
+  }
+
+  /* ---------------------------/Social----------------------------- */
+
+  /* ---------------------------Banner----------------------------- */
+
+  .banner__inner {
+    padding: 0;
+  }
+  .banner__title {
+    padding: 45px 0;
+    font-size: 1.33rem;
+  }
+
+  .banner__title::after {
+    width: 134px;
+    left: calc(50% - 67px);
+  }
+
+  .banner__subtitle {
+    margin: 14px 0 66px;
+    font-weight: 400;
+    font-size: 0.77rem;
+  }
+
+  .intro__btn_banner {
+    width: 287px;
+    font-size: 1rem;
+  }
+
+  /* ---------------------------/Banner----------------------------- */
+
+  /* ---------------------------Contacts----------------------------- */
+  .contacts {
+    padding: 0 0 40px;
+  }
+  .contacts__title {
+    margin-bottom: 24px;
+    padding: 43px 0;
+    font-weight: 400;
+  }
+
+  .contacts__title:after {
+    width: 134px;
+  }
+
+  .contacts__subtitle {
+    margin: 0 auto 64px;
+    width: 288px;
+  }
+
+  .form__input-contacts {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .contacts__form {
+    gap: 50px;
+  }
+
+  .contacts__form-input-block {
+    max-width: 430px;
+  }
+
+  .contacts__form-message-block {
+    width: 486px;
+  }
+
+  .form__input-message {
+    width: 100%;
+    padding-bottom: 168px;
+    margin-bottom: 0;
+  }
+
+  .contacts__form-btn {
+    width: 100%;
+  }
+
+  /* ---------------------------/Contacts----------------------------- */
+
+  /* ---------------------------Footer----------------------------- */
+  footer {
+    padding: 35px 30px;
+  }
+
+  .footer__content {
+    gap: 27px;
+  }
+
+  .social__icons_footer {
+    gap: 17px;
+    margin-bottom: 0;
+  }
+
+  .social__icons-icon_sm {
+    width: 26px;
+    height: 26px;
+  }
+
   /* ---------------------------/Footer----------------------------- */
 }
 /* ---------------------------/@media----------------------------- */
