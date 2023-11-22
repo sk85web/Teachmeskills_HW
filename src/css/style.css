@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1510px;
+  margin: 10px auto;
+  text-align: center;
+}
+/* ------------------Первый способ------------------ */
+.wrapper-1 {
+  display: grid;
+  margin-bottom: 20px;
+}
+
+.wrapper__box-1 {
+  height: 378px;
+}
+
+.box_1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.box_2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.box_3 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+}
+
+.box_7 {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+}
+
+/* ------------------/Первый способ------------------ */
+
+/* ------------------Второй способ------------------ */
+.wrapper-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+
+.wrapper__box {
+  height: 378px;
+}
+
+.wrapper__box_bg {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+}
+
+/* ------------------/Второй способ------------------ */
+
+/* ------------------Третий способ------------------ */
+.wrapper-3 {
+  padding: 10px;
+  display: grid;
+  grid-template: 500px 300px / 1fr 1fr 1fr;
+  /* grid-template-rows: 400px 300px; */
+  /* grid-template-columns: 20px repeat(6, 1fr) 2fr; */
+  /* grid-row-end: 1 / span 2; */
+  /* grid-area: auto; */
+  /* grid-template-columns: 100px 200px 100px; */
+  /* grid-template-columns: 2rem 20% 150px 1fr; */
+  /* grid-auto-rows: 100px; */
+  font-size: 30px;
+  grid-gap: 10px;
+  border: 2px solid green;
+}
+
+.item {
+  color: #fff;
+  /* height: 378px; */
+  /* border: 2px solid #000; */
+  background-color: #525151;
+}
+.item-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+/* ------------------/Третий способ------------------ */
